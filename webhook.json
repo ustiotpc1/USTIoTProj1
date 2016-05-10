@@ -1,0 +1,23 @@
+{ 
+  "event": "PublishToEventHub", 
+  "url": "https://ustiotpc1ns.servicebus.windows.net/ustiotpc1hub/messages", 
+  "requestType": "POST", 
+  "json": { 
+    "subject": "{{s}}", 
+    "unitofmeasure": "{{u}}", 
+    "measurename": "{{m}}", 
+    "value": "{{v}}", 
+    "organization": "{{o}}", 
+    "displayname": "{{d}}", 
+    "location": "{{l}}", 
+    "timecreated": "{{SPARK_PUBLISHED_AT}}", 
+    "guid": "{{SPARK_CORE_ID}}"
+  },
+
+  "azure_sas_token": { 
+    "key_name": "PublishToEventHubWebHook", 
+    "key": "IePr/rS2mwHFRmrMRROeZcMUvBN/CKEscPEgRUgPM+I=" 
+  },
+  
+  "mydevices": true 
+}
